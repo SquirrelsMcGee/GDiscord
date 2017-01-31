@@ -1,0 +1,49 @@
+<html>
+<link rel="stylesheet" type="text/css" href="./css/scroll.css">
+<link rel="stylesheet" type="text/css" href="./css/main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<body style="background-color: #36393e; float: left; ">
+        <div class="app">
+            <div class="flex app-spacer">
+                <div class="flex-vertical guilds-wrapper">
+                    <div class="scroller-wrap">
+                        <div class="scroller-guilds">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-vertical channels-wrapper">
+				
+                </div>
+                <div class="flex-vertical chat-wrapper">
+					<div class="message_wrapper"></div>
+                    <textarea id="message_box" rows="5" cols="60"></textarea>
+                </div>
+            </div>
+        </div>
+	<div class="controls_wrapper">
+		<select id="type_select" style="visibility: hidden;">
+			<option value="null"></option>
+			<option value="users">Users</option>
+			<option value="guilds">Guilds</option>
+		</select>
+		
+		<select id="guild_select" style="visibility: hidden;"><option value="null"></option></select>
+		<select id="channel_select" style="visibility: hidden;"><option value="null"></option></select>
+	</div>
+	<div id="user_wrapper">
+		<h2>User Profile Viewer</h2>
+		<textarea id="searchuser_box" rows="1" cols="30"></textarea>
+		<select id="user_select"><option value=null></select>
+		<div id="userinfo_container">
+			<img id="avatar" src=''></img>
+			<div id="userinfo"></div>
+		</div>
+	</div>
+	
+<body>
+<script src="./req/discord.master.js"></script>
+<script src="./req/commands.js"></script>
+<script src="./req/interface.js"></script>
+<script src="./req/message_receive.js"></script>
+</html>
