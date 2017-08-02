@@ -1,4 +1,4 @@
 # GhettoDiscord
-Simple Discord client Using discord.js webpack
+A simple Discord client using the discord.js webpack.
 
-Help wanted in making this a fully featured client 
+Help wanted in making this a fully featured client.
